@@ -61,6 +61,7 @@
             this.btThoat.TabIndex = 79;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btSua
             // 
@@ -70,6 +71,7 @@
             this.btSua.TabIndex = 80;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btThem
             // 
@@ -79,6 +81,7 @@
             this.btThem.TabIndex = 82;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // label2
             // 
@@ -115,6 +118,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(773, 308);
             this.dataGridView1.TabIndex = 78;
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             // 
             // ColNgaySinh
             // 
@@ -231,6 +235,7 @@
             this.btXoa.TabIndex = 81;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // Employee_GUI
             // 
@@ -255,6 +260,7 @@
             this.Controls.Add(this.btXoa);
             this.Name = "Employee_GUI";
             this.Text = "Employee_GUI";
+            this.Load += new System.EventHandler(this.Employee_GUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
